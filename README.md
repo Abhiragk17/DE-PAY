@@ -1,16 +1,3 @@
-# Sample Hardhat Project
-
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
 ## About this project
 
 De-pay is a decentralized application that facilitates any company or individual to pay the salary of their employees in ethereum with just a click of a button. This application cuts down the necessary resources for anyone to pay their employees and will be significantly more efficient.
