@@ -17,4 +17,7 @@ De-pay is a decentralized application that facilitates any company or individual
 
 TechStack -  The frontend of this application is made using Next.js (framework of the React.js library )and tailwindcss (a CSS framework). The backend of this application is a smart contract written in Solidity (a contract oriented language used to write smart contracts for the Ethereum blockchain)which is deployed on the Mumbai Testnet using Hardhat. 
 
+Link - https://de-pay.vercel.app/
+Github - https://github.com/Abhiragk17/DE-PAY
+
 The smart contract is connected to the frontend using the Web3Modal library which allows our application to support multiple web3 providers such as Metamask. 

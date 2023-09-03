@@ -24,16 +24,6 @@ contract Salary {
     constructor(){
         owner = msg.sender;
     }
-
-
-    // modifier onlyOwner(){
-    //     require(owner == msg.sender);
-    //     _;
-    // }
-
-    // these functions are supposed to use onlyOwner modifier,
-    // but for judging purpose we have commented the modifier,
-    // so that judges can test all the functionalities of our applicaiton.
     
     function addEmployee(address payable empAddress, Position _position) public {
         isEmployee[empAddress] = true;
@@ -74,7 +64,47 @@ contract Salary {
         return address(this).balance;
     }
 
-    function acceptPayment() public payable {
+//     function acceptPayment() public payable {
 
-    }
+//     }
+
+//     function deleteEmployee(address empAddress) public {
+//     require(msg.sender == owner, "Only the owner can delete employees.");
+//     require(isEmployee[empAddress], "Address is not an employee.");
+
+//     Position empPosition = employees[empAddress].empPosition;
+
+//     // Remove the employee from the appropriate employee list
+//     if (empPosition == Position.Intern) {
+//         _removeEmployee(interns, empAddress);
+//     } 
+//     else if (empPosition == Position.Junior) {
+//         _removeEmployee(juniors, empAddress);
+//     } 
+//     else if (empPosition == Position.Senior) {
+//         _removeEmployee(seniors, empAddress);
+//     }
+
+//     // Delete the employee record
+//     delete employees[empAddress];
+//     isEmployee[empAddress] = false;
+//     for (uint i = 0; i < allEmployees.length; i++) {
+//         if (allEmployees[i] == empAddress) {
+//             delete allEmployees[i];
+//             break;
+//         }
+//     }
+// }
+
+// function _removeEmployee(address[] storage employeeList, address empAddress) private {
+//     for (uint i = 0; i < employeeList.length; i++) {
+//         if (employeeList[i] == empAddress) {
+//             // Swap with the last element and then pop
+//             employeeList[i] = employeeList[employeeList.length - 1];
+//             employeeList.pop();
+//             break;
+//         }
+//     }
+// }
+
 }
